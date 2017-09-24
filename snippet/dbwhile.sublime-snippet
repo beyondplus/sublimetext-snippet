@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+if (${1:result}->num_rows > 0) {
+    // output data of each row
+    while(${2:row} = ${3:result}->fetch_assoc()) {
+        echo "id: " . ${4:row}["id"]. " - Name: " . ${5:row}["firstname"]. " " . ${6:row}["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dbwhile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+<form action="" method="${1:post}">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="name" class="form-control" id="inputName" placeholder="Name" name="${2:name}">
+  </div>
+  <div class="form-group">
+    <label for="Email Address">Email address</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="${3:email}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="media" name="${4:media}">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="${5:status}"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bform</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

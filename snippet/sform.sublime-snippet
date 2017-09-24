@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<form action="" method="${1:post}">
+	<input type="text" name="${2:name}">
+	<input type="text" name="${3:email}">
+</form>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sform</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

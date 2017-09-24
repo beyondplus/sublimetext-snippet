@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// Create connection
+"CREATE TABLE ${1:tablename} (
+${2:id} INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+${3:firstname} VARCHAR(30) NOT NULL,
+${4:lastname} VARCHAR(30) NOT NULL,
+${5:email} VARCHAR(50),
+${6:reg_date} TIMESTAMP
+)";
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dbcreate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

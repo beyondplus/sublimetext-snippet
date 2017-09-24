@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+"DELETE FROM  ${1:tablename} WHERE ${4:id}=${5:2}";
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dbdelete</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

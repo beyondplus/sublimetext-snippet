@@ -1,0 +1,252 @@
+<snippet>
+	<content><![CDATA[
+/*
+Theme Name: Custom Theme
+Theme URI: http://beyondplus.biz
+Author: Beyond Plus Developer
+Author URI: http://beyondplus.biz/
+Description: Wordpress Theme Tutorial
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: customtheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.menu-menu-container {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+.menu-menu-container ul,
+.menu-menu-container li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-menu-container ul {
+  position: relative;
+  z-index: 597;
+}
+.menu-menu-container ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+}
+.menu-menu-container ul li.hover,
+.menu-menu-container ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+.menu-menu-container ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+.menu-menu-container ul ul li {
+  float: none;
+}
+.menu-menu-container ul ul ul {
+  top: 0;
+  left: 190px;
+  width: 190px;
+}
+.menu-menu-container ul li:hover > ul {
+  visibility: visible;
+}
+.menu-menu-container ul ul {
+  bottom: 0;
+  left: 0;
+}
+.menu-menu-container ul ul {
+  margin-top: 0;
+}
+.menu-menu-container ul ul li {
+  font-weight: normal;
+}
+.menu-menu-container a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+/* Custom CSS Styles */
+.menu-menu-container {
+  background: #333333;
+  border-bottom: 4px solid #1b9bff;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+.menu-menu-container > ul {
+  *display: inline-block;
+}
+.menu-menu-container:after,
+.menu-menu-container ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu-menu-container ul {
+  text-transform: uppercase;
+}
+.menu-menu-container ul ul {
+  border-top: 4px solid #1b9bff;
+  text-transform: none;
+  min-width: 190px;
+}
+.menu-menu-container ul ul a {
+  background: #1b9bff;
+  color: #ffffff;
+  border: 1px solid #0082e7;
+  border-top: 0 none;
+  line-height: 150%;
+  padding: 16px 20px;
+  font-size: 12px;
+}
+.menu-menu-container ul ul ul {
+  border-top: 0 none;
+}
+.menu-menu-container ul ul li {
+  position: relative;
+}
+.menu-menu-container ul ul li:first-child > a {
+  border-top: 1px solid #0082e7;
+}
+.menu-menu-container ul ul li:hover > a {
+  background: #4eb1ff;
+  color: #ffffff;
+}
+.menu-menu-container ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #1b9bff;
+  -webkit-box-shadow: 0 1px 0 #1b9bff;
+  box-shadow: 0 1px 0 #1b9bff;
+}
+.menu-menu-container ul ul li:last-child:hover > a {
+  -moz-border-radius: 0 0 0 3px;
+  -webkit-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.menu-menu-container ul ul li.has-sub > a:after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+.menu-menu-container ul li:hover > a,
+.menu-menu-container ul li.active > a {
+  background: #1b9bff;
+  color: #ffffff;
+}
+.menu-menu-container ul li.has-sub > a:after {
+  content: '+';
+  margin-left: 5px;
+}
+.menu-menu-container ul li.last ul {
+  left: auto;
+  right: 0;
+}
+.menu-menu-container ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+.menu-menu-container a {
+  background: #333333;
+  color: #CBCBCB;
+  padding: 0 20px;
+}
+.menu-menu-container > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+.commentlist {
+  margin: 0px;
+  padding: 0px;
+}
+
+.commentlist li {
+  padding: 10px;
+  list-style: none;
+}
+.commentlist .even { 
+  background-color:#ccddf2; 
+} 
+.commentlist .odd  {
+background-color:#CCCCCC;
+}
+
+.comments-area article header {
+    margin: 0 0 48px;
+    overflow: hidden;
+    position: relative;
+    background-color:#55737D;
+    color:#FFFFFF;
+    padding: 10px;
+}
+
+li.bypostauthor cite span {
+    color: #21759b;
+    background-color: #f8f0cb;
+    background-image: none;
+    border: 1px solid #f8f0cb;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 3px;
+    font-weight:bold;
+}
+
+.reply { 
+    /*float:right;*/
+    margin:0 10px 10px 0;
+    text-align:center;
+    background-color: #55737D;
+    border:1px solid #55737D;
+    border-radius:3px;
+    padding:3px;
+    width:50px;
+    box-shadow: 1px 1px 2px 2px #4f4f4f;
+}
+ 
+.comment article {
+    padding-bottom:2.79rem;
+}
+ 
+a.comment-reply-link,
+a.comment-edit-link {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-size: 0.928571429rem;
+    line-height: 1.846153846;
+    text-decoration:none;
+}
+ 
+a.comment-reply-link:hover,
+a.comment-edit-link:hover {
+    color: #f6e7d7;
+}
+
+#comment {
+  width: 100%;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpstyle</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

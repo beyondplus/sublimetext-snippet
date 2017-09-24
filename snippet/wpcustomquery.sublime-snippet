@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+// The Loop
+if ( new WP_Query( array( 'p' => 7 ) )->have_posts() ) {
+	echo '<ul>';
+	while ( new WP_Query( array( 'p' => 7 )->have_posts() ) {
+		new WP_Query( array( 'p' => 7 )->the_post();
+		echo '<li>' . get_the_title() . '</li>';
+	}
+	echo '</ul>';
+	/* Restore original Post Data */
+	wp_reset_postdata();
+} else {
+	// no posts found
+}
+// read more https://codex.wordpress.org/Class_Reference/WP_Query
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpcustomquery</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

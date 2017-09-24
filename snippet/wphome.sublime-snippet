@@ -1,0 +1,157 @@
+<snippet>
+	<content><![CDATA[
+<?php wp_head(); ?>
+<?php get_header(); ?>
+    <section class="slider has-pattern main_bg">
+<div class="container">
+		
+		<div class="col-md-7 slidercontent">
+			<div class="overview">
+				<h1 class="title animated fadeInUp delayp1" > Wordpress Tutorial</h1>
+				<h3 id="skill-text"> Video Screencasts </h3>
+				<div class="button fadeInUp delayp2">
+					
+				</div>						
+			</div>	
+		</div>
+		
+		<div class="col-md-5">
+			<div class="laptop">
+				<img src="https://www.baryarnathi.com/public/front/img/homelogo.png" alt="baryarnathi video learning" class="img-responsive" title="baryarnathi video learning"/>
+				<p></p>
+			</div>	
+		</div>
+		<div class="container" style="padding-top:100px;">
+			<form role="search" method="get" id="searchform"
+							class="searchform form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<div class="col-md-10">
+						<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" class="form-control" placeholder="Search box"/>
+				</div>
+				<div class="col-md-2">
+					<input type="submit" id="searchsubmit"
+						    value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" class="form-control" />
+				</div>
+			</form>
+		</div>
+</div>
+
+</section>
+	
+	<div class="col-md-12 featured-series" >
+		<div class="col-md-12 text-center">
+			<h2>Latest T-Shirts</h2>
+			<hr>
+			<br>
+			<br>
+		</div>
+		<div class="col-md-12 text-center" id="featured-series">			
+				<?php $i = 1; while (have_posts() && $i < 5) : the_post(); ?>
+				<div class="col-md-3" class="thumbnails">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
+							<?php 
+								if ( has_post_thumbnail() ) {
+									the_post_thumbnail('thumbnail');
+								} 
+							?><br>
+						<span><?php the_title(); ?></span>
+					</a>
+				</div>
+				<?php $i++; endwhile; ?>				
+		</div>
+		<hr>
+	</div>
+	<div class="col-md-12 featured-series" >
+		<div class="col-md-12 text-center">
+			<h2>Popular Courses</h2>
+			<hr>
+			<br>
+			<br>
+		</div>
+		<div class="col-md-12 text-center">
+			<?php $i = 1; while (have_posts() && $i < 4) : the_post(); ?>
+				<div class="col-md-4">
+					<a href="<?php the_permalink(); ?>">
+					<div class="col-md-12 last-video">
+							<span><?php the_title(); ?></span>
+					</div>
+					</a>
+				</div>
+				
+
+			<?php $i++; endwhile; ?>
+				
+				
+			</div>
+		<hr>
+	</div>
+
+	<div class="col-md-12 chooseplan">
+		<div class="col-md-12 text-center">
+			<h2>Choose the Plan? </h2>
+			<hr>
+			<br>
+			<br>
+
+		</div>
+		<div class="col-md-12 price text-center">
+				<div class="col-md-3 ">
+					<div class="col-md-12 list">
+						<h3>3 MONTHS</h3>
+						<font>30,000 Kyat</font>
+						<p>
+							Are you a new starter? We recommend this plan to new starter. This is roughly 333 Kyat per day.
+						</p>
+						<a href="https://www.baryarnathi.com/plan/threemonthplan" class="btn-price" title="3 Months Plan">Add To Cart</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="col-md-12 list">
+						<h3>6 MONTHS</h3>
+						<font>60,000 Kyat</font>
+						<p>
+							Still undecided? Ease in with a monthly plan that can be canceled in ten seconds.
+						</p>
+						<a href="https://www.baryarnathi.com/plan/sixmonthplan" class="btn-price" title="6 Months Plan">Add To Cart</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="col-md-12 list">
+						<h3>YEARLY</h3>
+						<font>120,000 Kyat</font>
+						<p>
+							Still undecided? Ease in with a monthly plan that can be canceled in ten seconds.
+						</p>
+						<a href="https://www.baryarnathi.com/plan/yearly" class="btn-price" title="Yearly Plan">Add To Cart</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="col-md-12 list">
+						<h3>SCHOLARSHIP</h3>
+						<font>request</font>
+						<p>
+							Are you a student? Student has a chance to get the scholarship. If you interested, fill up the request form.
+						</p>
+						<a href="https://www.baryarnathi.com/plan/scholarship" class="btn-price" title="Scholarship">Add To Form</a>
+					</div>
+				</div>
+
+		</div>
+		<hr>
+	</div>
+	<div class="col-md-12 main_goal listcontainer">
+		<div class="col-md-12">
+				<h2>Advantages</h2>
+				<hr>
+				<p>Plenty of educational resources will teach you how to do it. But what about those of us who already do that full-time, every single day? Where do we go to further our education? If ever there was a field that required nonstop learning, programming is certainly it. </p>
+        </div>
+			
+	</div>
+
+<?php wp_footer(); ?>
+<?php get_footer(); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wphome</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

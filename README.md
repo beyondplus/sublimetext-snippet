@@ -2,11 +2,31 @@
 Practise your skill to like a ninja developer
 
 # Installation
+## Linux
+* /home/{user}/.config/sublime-text-3/Packages/User
 
-# Usage
-## Boostrap
+# Usage of shortcut
+## Bootstrap UI Generate
 * bcdn = CDN links
+* bnav = Menu
 * bform = Simple Form view
+* btable = Table view
+
+## Database Query Codes
+* dbcon = Database Connection
+* dbcreate = Create Table
+* dbinsert = Insert Table
+* dbselect = Select Table
+* dbupdate = Update Table
+* dbdelete = Delete Table
+* dbwhile = Select Query Looping
 
 ## Wordpress
-* wploop = Post,Page and Single's looping
+* wpstyle = default style
+* wploop = looping at Post.php, Page.php and Single.php
+* wphome = Home Page Template at home.php
+* wpfunction = Necessary Function at functions.php
+* wpnav = menu view
+* wpcatlist = categories list and count
+* wpcomment = comment and reply
+* wpcustomquery = custom query

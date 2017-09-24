@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+	<?php the_time('F jS, Y'); ?>
+	<?php the_author_posts_link(); ?>
+	<?php 
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail('thumbnail');
+		} 
+	?>
+<?php endwhile; endif ; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wploop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -12,6 +12,10 @@ Practise your skill to like a ninja developer
 * bform = Simple Form view
 * btable = Table view
 
+## Javascript
+* jsget = get method with php
+* jspost = post method with php
+
 ## Database Query Codes
 * dbcon = Database Connection
 * dbcreate = Create Table
@@ -30,3 +34,6 @@ Practise your skill to like a ninja developer
 * wpcatlist = categories list and count
 * wpcomment = comment and reply
 * wpcustomquery = custom query
+
+## Contribute Url
+* https://github.com/beyondplus/sublimetext-snippet

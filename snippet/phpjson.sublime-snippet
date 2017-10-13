@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<?php
+header("Content-Type: application/json; charset=UTF-8");
+if(isset($_GET["x"])) {
+  \$obj = \$_GET["x"];
+  //\$obj = json_decode(\$_GET["x"], false);
+
+  \$conn = new mysqli("myServer", "myUser", "myPassword", "Northwind");
+  \$result = \$conn->query("SELECT name FROM ".\$obj->table." LIMIT ".\$obj->limit);
+  \$outp = array();
+  \$outp = \$result->fetch_all(MYSQLI_ASSOC);
+
+  echo json_encode(\$outp);  
+}
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>phpjson</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

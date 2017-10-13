@@ -1,0 +1,51 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use the HTTP method POST to send data to the PHP file.</h2>
+
+<p id="demo"></p>
+
+<script>
+var obj, dbParam, xmlhttp, myObj, x, txt = "";
+obj = { "table":"customers", "limit":10 };
+dbParam = JSON.stringify(obj);
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        for (x in myObj) {
+            txt += myObj[x].name + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+};
+xmlhttp.open("POST", "json_demo_db_post.php", true);
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+
+</script>
+
+<p>Try changing the "table" property from "customers" to "products".</p>
+
+</body>
+</html>
+<?php
+header("Content-Type: application/json; charset=UTF-8");
+\$obj = json_decode(\$_POST["x"], false);
+
+\$conn = new mysqli("myServer", "myUser", "myPassword", "Northwind");
+\$result = \$conn->query("SELECT name FROM ".\$obj->table." LIMIT ".\$obj->limit);
+\$outp = array();
+\$outp = \$result->fetch_all(MYSQLI_ASSOC);
+
+echo json_encode(\$outp);
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>phpjsonpost</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

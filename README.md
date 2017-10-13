@@ -20,6 +20,8 @@ Practise your skill to like a ninja developer
 
 ## PHP
 * phpfileupload = File Upload Function and UI
+* phpjson = PHP Json Api
+* phpjsonpost = PHP Json Post Api
 
 ## Database Query Codes
 * dbcon = Database Connection

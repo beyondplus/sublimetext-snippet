@@ -11,10 +11,15 @@ Practise your skill to like a ninja developer
 * bnav = Menu
 * bform = Simple Form view
 * btable = Table view
+* bthemecanvas = Bootstrap default Offcanvas theme
+* bthemealbum = Bootstrap default Album theme
 
 ## Javascript
 * jsget = get method with php
 * jspost = post method with php
+
+## PHP
+* phpfileupload = File Upload Function and UI
 
 ## Database Query Codes
 * dbcon = Database Connection

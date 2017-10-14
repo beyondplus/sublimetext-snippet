@@ -11,8 +11,9 @@ Practise your skill to like a ninja developer
 * bnav = Menu
 * bform = Simple Form view
 * btable = Table view
-* bthemecanvas = Bootstrap default Offcanvas theme
-* bthemealbum = Bootstrap default Album theme
+* bthemecanvas = Offcanvas Theme
+* bthemealbum = Album Theme
+* bthemedashboard = Dashboard Theme
 
 ## Javascript
 * jsget = get method with php
